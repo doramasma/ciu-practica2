@@ -47,7 +47,7 @@ Si realizamos una figura y pulsamos el botón R, entonces accederemos a la sigui
 
 
 ### Capturar puntos <a id="capturar"></a>
-Se ha creado una clase auxiliar, que nos permitirá crear instancias de puntos. Estos objetos, disponen de unos getter para obtener la coordenada x e y de dicho punto. Por lo tanto, crearemos un ArrayList<puntos> que nos servirá para el almacenamiento de dichos puntos. Para capturar los puntos, nos apoyaremos en la funcion mousePressed(), mientras el ratón esté precionado, estaremos obteniendo las coordenadas x e y del mouse y las guardaremos en nuestro ArrayList.
+Se ha creado una clase auxiliar, que nos permitirá crear instancias de puntos. Estos objetos, disponen de unos getter para obtener la coordenada x e y de dicho punto. Por lo tanto, crearemos un ArrayList<puntos> que nos servirá para el almacenamiento de dichos puntos. Para capturar los puntos, nos apoyaremos en la funcion mousePressed(), mientras el ratón esté presionado, estaremos obteniendo las coordenadas x e y del mouse y las guardaremos en nuestro ArrayList.
 
 ### Conversion 3D <a id="conversion"></a>
 Básicamente, para realizar la transformación de los puntos a una figura en 3D. Aplicaremos las formulas de rotacion que aparecen en los apuntes:
