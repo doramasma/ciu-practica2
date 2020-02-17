@@ -34,7 +34,7 @@ Para el desarrollo de la práctica se ha utilizado la siguiente librería:
 
 ### Información general <a id="informaciónGeneral"></a>
 
-Cuando iniciamos la aplicaciión, aparecerá la vista principal, en la que se nos explicarán los controles. En este caso, estamos tratando con la vista de 2 dimensiones.
+Cuando iniciamos la aplicación, aparecerá la vista principal, en la que se nos explicarán los controles. En este caso, estamos tratando con la vista de 2 dimensiones.
 - Convertir a objeto 3D: R
 - Nueva figura: E
 - Añadir puntos: click izquierdo 
@@ -50,10 +50,16 @@ Si realizamos una figura y pulsamos el botón R, entonces accederemos a la sigui
 Se ha creado una clase auxiliar, que nos permitirá crear instancias de puntos. Estos objetos, disponen de unos getter para obtener la coordenada x e y de dicho punto. Por lo tanto, crearemos un ArrayList<puntos> que nos servirá para el almacenamiento de dichos puntos. Para capturar los puntos, nos apoyaremos en la funcion mousePressed(), mientras el ratón esté precionado, estaremos obteniendo las coordenadas x e y del mouse y las guardaremos en nuestro ArrayList.
 
 ### Conversion 3D <a id="conversion"></a>
+Básicamente, para realizar la transformación de los puntos a una figura en 3D. Aplicaremos las formulas de rotacion que aparecen en los apuntes:
 
+*x2 = x1 · cosθ − z1 ·senθ* <br/>
+*y2 = y1* <br/>
+*z2 = x1 ·senθ + z1 · cosθ* <br/>
+
+Donde el ángulo, serán sucesivas interaciones de PI/4 en PI/4 hasta alcanzar 2PI
 
 ### Rotación
-
+Cuando hablamos de rotaciones, estamos hablando de rotar la figura sobre su propio eje. En este caso, he optado por dar la posibilidad de realizar una rotacion sobre el eje y de la figura. Lo que provocará, que veamos al objeto girar hacia la derecha o izquierda sobre su propio eje. Para ello, he habilitado el click derecho e izquierdo del ratón.
 
 
 ## Referencias
